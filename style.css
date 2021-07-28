@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    /*outline: 1px solid red;*/
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #e0e0e0;
+    overflow-x: hidden;
+}
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+}
+
+/** Navbar **/
+.navbar .home {
+    color: #035862;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.navbar .home1 {
+    display: none;
+}
+.navbar .nav-link {
+    color: #035862;
+}
+.profile {
+    margin-top: 15rem;
+    color: #035862;
+    text-align: center;
+}
+h3.greet {
+    text-align: center;
+    font-weight: 400;
+}
+h1.name {
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+}
+a.icon {
+    padding-right: 20px;
+    color: #0B0C10;
+    font-size: 2rem;
+}
+.pic {
+    margin-top: -10rem;
+    height: 500px;
+    width: 500px;
+}
+
+/** About **/
+.aboutme-body {
+    background-image: linear-gradient(to right, #f05053 50%, white 50%);
+}
+h1.myself {
+    margin-top: 17rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.about-body {
+    margin-top: 5rem;
+}
+.detail {
+    margin: 2rem;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+.fas {
+    color: #f05053;
+}
+
+/** Skills **/
+.skill-fluid {
+    margin-top: 5rem;
+}
+.skill-body {
+    background-color: #CFDEF3;
+}
+h5.skills-header {
+    margin-top: 5rem;
+    margin-left: 2rem;
+    font-weight: 700;
+}
+h6.certificate {
+    margin-left: 4rem;
+}
+p.skills-body {
+    margin-top: 1rem;
+    margin-left: 4rem;
+    font-size: 1.1rem;
+}
+img.img-skills {
+    margin-top: 5rem;
+    margin-left: 15rem;
+}
+a.skill-link {
+    text-decoration: none;
+    color: #0B0C10;
+}
+a.skill-link:hover {
+    text-decoration: underline;
+}
+
+/** Projects **/
+.project-body {
+    background-image: linear-gradient(to right, #00B4DB 50%, white 50%);
+}
+.projects-body {
+    margin-top: 5rem;
+}
+h3.project-name {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-weight: 700;
+}
+p.project-detail {
+    margin-left: 2rem;
+    font-size: 1.1rem;
+}
+.project-name i {
+    color: #00B4DB;
+}
+
+/** Achievements **/
+.achievement-header {
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+.achievement-body {
+    background-color: #f2f2f2;
+}
+.achievement-fluid {
+    margin-top: 5rem;
+    text-align: center;
+}
+h5.achievements-body {
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+i.far {
+    margin-right: 1rem;
+}
+
+/** RESPONSIVE **/
+@media only screen and (max-width : 768px) {
+
+    #myBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 12px;
+        z-index: 99;
+        cursor: pointer;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    /** Home **/
+    .navbar .home1 {
+        display: block;
+        color: #035862;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+    .navbar-collapse .nav-link{
+        color: #035862;
+    }
+    .profile {
+        margin-top: 12rem;
+    }
+    a.icon {
+        margin-left: 1rem;
+        padding-right: 1rem;
+    }
+    img.pic {
+        margin-top: 5rem;
+        height: auto;
+        width: auto;
+    }
+    
+    /** About **/
+    .aboutme-body {
+        background-image: linear-gradient(to bottom, #f05053 60%, white 60%) !important;
+    }
+    h1.myself {
+        margin-top: 10rem;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    .about-body {
+        margin-top: 15rem;
+    }
+    .detail {
+        margin: 1rem;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    /** Skills **/
+    .skill-fluid {
+        margin-top: 2rem;
+    }
+    h5.skills-header {
+        margin-top: 5rem;
+        margin-left: 0;
+    }
+    h6.certificate {
+        margin-left: 0;
+    }
+    p.skills-body {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+    img.img-skills {
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+
+    /** Projects **/
+    .project-body {
+        background-image: linear-gradient(to bottom, #00B4DB 43%, white 43%);
+    }
+    .projects-body {
+        margin-top: 13.5rem;
+    }
+    h3.project-name {
+        margin-top: 3rem;
+        margin-left: 0;
+        font-weight: 700;
+    }
+    p.project-detail {
+        margin-left: 0;
+        font-size: 1.1rem;
+    }
+
+    /** Achievements **/
+    .achievement-fluid {
+        margin-top: 5rem;
+        text-align: center;
+    }
+    h5.achievements-body {
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+    img.img-achievements {
+        margin-top: 2rem;
+    }
+    i.far {
+        margin-right: 1rem;
+    }
+}
