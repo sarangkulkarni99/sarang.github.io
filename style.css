@@ -31,6 +31,7 @@ body {
 }
 .navbar .nav-link {
     color: #035862;
+    font-weight: 600;
 }
 .profile {
     margin-top: 15rem;
@@ -59,7 +60,7 @@ a.icon {
 
 /** About **/
 .aboutme-body {
-    background-image: linear-gradient(to right, #f05053 50%, white 50%);
+    background-image: linear-gradient(to right, #22c1c3 50%, white 50%);
 }
 h1.myself {
     margin-top: 17rem;
@@ -77,8 +78,15 @@ h1.myself {
     padding: 2rem;
     font-size: 1.2rem;
 }
+a.mail {
+    text-decoration: none;
+    color: #0B0C10;
+}
+a.mail:hover {
+    text-decoration: underline;
+}
 .fas {
-    color: #f05053;
+    color: #22c1c3;
 }
 
 /** Skills **/
@@ -90,15 +98,15 @@ h1.myself {
 }
 h5.skills-header {
     margin-top: 5rem;
-    margin-left: 2rem;
-    font-weight: 700;
+    margin-left: 5rem;
+    font-weight: 700 !important;
 }
 h6.certificate {
-    margin-left: 4rem;
+    margin-left: 7rem;
 }
 p.skills-body {
     margin-top: 1rem;
-    margin-left: 4rem;
+    margin-left: 7rem;
     font-size: 1.1rem;
 }
 img.img-skills {
@@ -135,6 +143,7 @@ p.project-detail {
 
 /** Achievements **/
 .achievement-header {
+    margin-left: 2rem;
     text-align: left;
     font-weight: 700;
     letter-spacing: 4px;
@@ -148,7 +157,7 @@ p.project-detail {
 }
 h5.achievements-body {
     margin-top: 3rem;
-    margin-left: 5rem;
+    margin-left: 8rem;
 }
 i.far {
     margin-right: 1rem;
@@ -169,10 +178,14 @@ i.far {
 
     /** Home **/
     .navbar .home1 {
+        padding-left: 0 !important;
         display: block;
         color: #035862;
         font-weight: 700;
         letter-spacing: 1.5px;
+    }
+    .navbar .home {
+        padding-left: 0 !important;
     }
     .navbar-collapse .nav-link{
         color: #035862;
@@ -192,7 +205,7 @@ i.far {
     
     /** About **/
     .aboutme-body {
-        background-image: linear-gradient(to bottom, #f05053 60%, white 60%) !important;
+        background-image: linear-gradient(to bottom, #22c1c3 60%, white 60%) !important;
     }
     h1.myself {
         margin-top: 10rem;
@@ -213,7 +226,7 @@ i.far {
 
     /** Skills **/
     .skill-fluid {
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
     h5.skills-header {
         margin-top: 5rem;
@@ -249,6 +262,9 @@ i.far {
     }
 
     /** Achievements **/
+    .achievement-header {
+        margin-left: 0;
+    }
     .achievement-fluid {
         margin-top: 5rem;
         text-align: center;
@@ -262,5 +278,88 @@ i.far {
     }
     i.far {
         margin-right: 1rem;
+    }
+}
+
+@media only screen and (max-width : 823px) {
+    /** About **/
+    .aboutme-body {
+        background-image: linear-gradient(to bottom, #22c1c3 53%, white 47%) !important;
+    }
+    h1.myself {
+        margin-top: 10rem;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    .about-body {
+        margin-top: 15rem;
+    }
+    .detail {
+        margin-bottom: 3rem;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    /** Skills **/
+    img.img-skills {
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+
+    /** Achievements **/
+    img.img-achievements {
+        margin-top: 5rem;
+    }
+}
+
+@media only screen and (max-width : 568px) {
+    /** About **/
+    .aboutme-body {
+        background-image: linear-gradient(to bottom, #22c1c3 50%, white 50%) !important;
+    }
+    h1.myself {
+        margin-top: 10rem;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    .detail {
+        margin-bottom: 3rem;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    /** Skills **/ 
+    h5.skills-header {
+        margin-top: 4rem;
+        margin-left: 0;
+    }
+
+    /** Projects **/
+    .project-body {
+        background-image: linear-gradient(to bottom, #00B4DB 38%, white 38%);
+    }
+    .projects-body {
+        margin-top: 13.5rem;
+    }
+    h3.project-name {
+        margin-top: 3rem;
+        margin-left: 0;
+        font-weight: 700;
+    }
+    p.project-detail {
+        margin-left: 0;
+        font-size: 1.1rem;
+    }
+
+    /** Achievements **/
+    h5.achievements-body {
+        margin-top: 1rem;
+        margin-left: 0;
     }
 }
